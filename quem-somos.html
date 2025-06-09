@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça a história e valores da PowerSuplementos, sua loja de suplementos alimentares.">
+    <title>Quem Somos - PowerSuplementos</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="PowerSuplementos Logo" id="logo-img">
+                    <h1>Power<span>Suplementos</span></h1>
+                </a>
+            </div>
+            
+            <div class="search-bar">
+                <form action="#" method="get">
+                    <input type="text" placeholder="O que você procura?" id="search-input">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            
+            <nav id="main-nav">
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                    <span id="hamburger"></span>
+                </button>
+                <ul id="menu" role="menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="quem-somos.html" class="active">Quem Somos</a></li>
+                    <li><a href="fale-conosco.html">Fale Conosco</a></li>
+                    <li><a href="endereco.html">Endereço</a></li>
+                    <li><a href="https://wa.me/5511999999999" target="_blank" class="whatsapp-link">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a></li>
+                </ul>
+            </nav>
+            
+            <div class="user-actions">
+                <a href="#" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <a href="#" class="user-icon">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <div class="container main-container">
+            <!-- Menu Lateral (Categorias) -->
+            <aside class="sidebar">
+                <h2>Categorias</h2>
+                <nav class="category-nav">
+                    <ul>
+                        <li><a href="index.html#wheys" data-category="wheys"><i class="fas fa-dumbbell"></i> Wheys</a></li>
+                        <li><a href="index.html#hipercaloricos" data-category="hipercaloricos"><i class="fas fa-weight"></i> Hipercalóricos</a></li>
+                        <li><a href="index.html#pre-treinos" data-category="pre-treinos"><i class="fas fa-bolt"></i> Pré-treinos</a></li>
+                        <li><a href="index.html#vitaminas" data-category="vitaminas"><i class="fas fa-pills"></i> Vitaminas</a></li>
+                        <li><a href="index.html#minerais" data-category="minerais"><i class="fas fa-tablets"></i> Minerais</a></li>
+                        <li><a href="index.html#colagenos" data-category="colagenos"><i class="fas fa-bone"></i> Colágenos</a></li>
+                        <li><a href="index.html#funcionais" data-category="funcionais"><i class="fas fa-heartbeat"></i> Funcionais</a></li>
+                        <li><a href="index.html#alimentos" data-category="alimentos"><i class="fas fa-apple-alt"></i> Alimentos</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="sidebar-banner">
+                    <h3>Ofertas Especiais</h3>
+                    <div class="offer-card">
+                        <img src="img/oferta-especial.jpg" alt="Oferta Especial">
+                        <div class="offer-content">
+                            <h4>Desconto de 20%</h4>
+                            <p>Em todos os produtos da linha Power</p>
+                            <a href="#" class="btn btn-sm">Ver Ofertas</a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Conteúdo Principal -->
+            <div class="content">
+                <!-- Breadcrumb -->
+                <div class="breadcrumb">
+                    <a href="index.html">Início</a> <i class="fas fa-chevron-right"></i> <span>Quem Somos</span>
+                </div>
+                
+                <!-- Seção Quem Somos -->
+                <section class="about-section">
+                    <h1 class="page-title">Quem Somos</h1>
+                    
+                    <div class="about-content">
+                        <div class="about-image">
+                            <img src="img/loja.jpg" alt="Loja PowerSuplementos">
+                        </div>
+                        
+                        <div class="about-text">
+                            <h2>Nossa História</h2>
+                            <p>A PowerSuplementos nasceu em 2015 com o objetivo de oferecer produtos de qualidade para quem busca melhorar a saúde, performance física e qualidade de vida através da suplementação alimentar.</p>
+                            <p>Fundada por um grupo de entusiastas do fitness e da nutrição esportiva, nossa empresa cresceu rapidamente e hoje é referência no mercado de suplementos alimentares, atendendo clientes em todo o Brasil.</p>
+                            
+                            <h2>Nossa Missão</h2>
+                            <p>Proporcionar acesso a suplementos alimentares de qualidade, com informação transparente e atendimento especializado, contribuindo para que nossos clientes alcancem seus objetivos de saúde e performance.</p>
+                            
+                            <h2>Nossa Visão</h2>
+                            <p>Ser reconhecida como a melhor e mais confiável loja de suplementos do Brasil, referência em qualidade de produtos, atendimento e informação sobre nutrição esportiva.</p>
+                            
+                            <h2>Nossos Valores</h2>
+                            <ul class="values-list">
+                                <li><i class="fas fa-check-circle"></i> <strong>Qualidade:</strong> Oferecemos apenas produtos de marcas reconhecidas e com garantia de procedência.</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Transparência:</strong> Informações claras e honestas sobre todos os produtos.</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Conhecimento:</strong> Equipe treinada e especializada em nutrição esportiva.</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Inovação:</strong> Buscamos constantemente as novidades do mercado para nossos clientes.</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Compromisso:</strong> Dedicação total à satisfação e resultados de nossos clientes.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="team-section">
+                        <h2>Nossa Equipe</h2>
+                        <p>Contamos com profissionais qualificados e apaixonados por nutrição esportiva, sempre prontos para oferecer o melhor atendimento e orientação.</p>
+                        
+                        <div class="team-grid">
+                            <div class="team-card">
+                                <div class="team-image">
+                                    <img src="img/team1.jpg" alt="João Silva">
+                                </div>
+                                <h3>João Silva</h3>
+                                <p class="team-role">Fundador e CEO</p>
+                                <p class="team-description">Nutricionista esportivo com mais de 10 anos de experiência no mercado de suplementação.</p>
+                            </div>
+                            
+                            <div class="team-card">
+                                <div class="team-image">
+                                    <img src="img/team2.jpg" alt="Maria Oliveira">
+                                </div>
+                                <h3>Maria Oliveira</h3>
+                                <p class="team-role">Nutricionista</p>
+                                <p class="team-description">Especialista em nutrição esportiva, responsável pelo suporte técnico aos clientes.</p>
+                            </div>
+                            
+                            <div class="team-card">
+                                <div class="team-image">
+                                    <img src="img/team3.jpg" alt="Pedro Santos">
+                                </div>
+                                <h3>Pedro Santos</h3>
+                                <p class="team-role">Educador Físico</p>
+                                <p class="team-description">Consultor de treinamento e suplementação para atletas e praticantes de atividade física.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonials-section">
+                        <h2>O que nossos clientes dizem</h2>
+                        
+                        <div class="testimonials-slider">
+                            <div class="testimonial-slide active">
+                                <div class="testimonial-content">
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="testimonial-text">"Excelente atendimento e produtos de qualidade. Sempre compro meus suplementos na PowerSuplementos e nunca tive problemas. Recomendo!"</p>
+                                    <div class="testimonial-author">
+                                        <img src="img/client1.jpg" alt="Carlos Mendes">
+                                        <div>
+                                            <h4>Carlos Mendes</h4>
+                                            <span>Cliente desde 2018</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="testimonial-slide">
+                                <div class="testimonial-content">
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="testimonial-text">"Ótimos preços e entrega super rápida. O atendimento pelo WhatsApp é muito eficiente, sempre tiram todas as minhas dúvidas."</p>
+                                    <div class="testimonial-author">
+                                        <img src="img/client2.jpg" alt="Ana Paula">
+                                        <div>
+                                            <h4>Ana Paula</h4>
+                                            <span>Cliente desde 2020</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="testimonial-slide">
+                                <div class="testimonial-content">
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <p class="testimonial-text">"A consultoria nutricional que recebi foi fundamental para escolher os suplementos certos para meus objetivos. Resultados incríveis!"</p>
+                                    <div class="testimonial-author">
+                                        <img src="img/client3.jpg" alt="Roberto Almeida">
+                                        <div>
+                                            <h4>Roberto Almeida</h4>
+                                            <span>Cliente desde 2019</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button class="testimonial-btn prev" aria-label="Depoimento anterior"><i class="fas fa-chevron-left"></i></button>
+                            <button class="testimonial-btn next" aria-label="Próximo depoimento"><i class="fas fa-chevron-right"></i></button>
+                            
+                            <div class="testimonial-dots">
+                                <span class="dot active" data-slide="0"></span>
+                                <span class="dot" data-slide="1"></span>
+                                <span class="dot" data-slide="2"></span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Newsletter -->
+                <section class="newsletter-section">
+                    <div class="newsletter-content">
+                        <h2>Receba Novidades e Promoções</h2>
+                        <p>Cadastre-se para receber ofertas exclusivas e dicas de suplementação.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Seu melhor e-mail" required>
+                            <button type="submit" class="btn btn-primary">Cadastrar</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/logo.png" alt="PowerSuplementos Logo">
+                    <h2>Power<span>Suplementos</span></h2>
+                    <p>Sua loja de suplementos alimentares para uma vida mais saudável.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="quem-somos.html">Quem Somos</a></li>
+                        <li><a href="fale-conosco.html">Fale Conosco</a></li>
+                        <li><a href="endereco.html">Endereço</a></li>
+                        <li><a href="politica-privacidade.html">Política de Privacidade</a></li>
+                        <li><a href="termos-uso.html">Termos de Uso</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-categories">
+                    <h3>Categorias</h3>
+                    <ul>
+                        <li><a href="index.html#wheys">Wheys</a></li>
+                        <li><a href="index.html#hipercaloricos">Hipercalóricos</a></li>
+                        <li><a href="index.html#pre-treinos">Pré-treinos</a></li>
+                        <li><a href="index.html#vitaminas">Vitaminas</a></li>
+                        <li><a href="index.html#minerais">Minerais</a></li>
+                        <li><a href="index.html#colagenos">Colágenos</a></li>
+                        <li><a href="index.html#funcionais">Funcionais</a></li>
+                        <li><a href="index.html#alimentos">Alimentos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Paulista, 1000 - São Paulo/SP</p>
+                    <p><i class="fas fa-phone"></i> (11) 5555-5555</p>
+                    <p><i class="fas fa-envelope"></i> contato@powersuplementos.com.br</p>
+                    <p><i class="fab fa-whatsapp"></i> (11) 99999-9999</p>
+                    
+                    <div class="social-media">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 PowerSuplementos - Todos os direitos reservados.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-pix"></i>
+                    <i class="fas fa-barcode"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <button id="btn-topo" aria-label="Voltar ao topo">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- WhatsApp Flutuante -->
+    <a href="https://wa.me/5511999999999" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+

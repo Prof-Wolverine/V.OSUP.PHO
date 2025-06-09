@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Loja de suplementos com os melhores produtos para sua saúde e desempenho físico.">
+    <title>PowerSuplementos - Sua loja de suplementos alimentares</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="PowerSuplementos Logo" id="logo-img">
+                    <h1>Power<span>Suplementos</span></h1>
+                </a>
+            </div>
+            
+            <div class="search-bar">
+                <form action="#" method="get">
+                    <input type="text" placeholder="O que você procura?" id="search-input">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            
+            <nav id="main-nav">
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                    <span id="hamburger"></span>
+                </button>
+                <ul id="menu" role="menu">
+                    <li><a href="index.html" class="active">Início</a></li>
+                    <li><a href="quem-somos.html">Quem Somos</a></li>
+                    <li><a href="fale-conosco.html">Fale Conosco</a></li>
+                    <li><a href="endereco.html">Endereço</a></li>
+                    <li><a href="https://wa.me/5511999999999" target="_blank" class="whatsapp-link">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a></li>
+                </ul>
+            </nav>
+            
+            <div class="user-actions">
+                <a href="#" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <a href="#" class="user-icon">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <div class="container main-container">
+            <!-- Menu Lateral (Categorias) -->
+            <aside class="sidebar">
+                <h2>Categorias</h2>
+                <nav class="category-nav">
+                    <ul>
+                        <li><a href="#wheys" class="active" data-category="wheys"><i class="fas fa-dumbbell"></i> Wheys</a></li>
+                        <li><a href="#hipercaloricos" data-category="hipercaloricos"><i class="fas fa-weight"></i> Hipercalóricos</a></li>
+                        <li><a href="#pre-treinos" data-category="pre-treinos"><i class="fas fa-bolt"></i> Pré-treinos</a></li>
+                        <li><a href="#vitaminas" data-category="vitaminas"><i class="fas fa-pills"></i> Vitaminas</a></li>
+                        <li><a href="#minerais" data-category="minerais"><i class="fas fa-tablets"></i> Minerais</a></li>
+                        <li><a href="#colagenos" data-category="colagenos"><i class="fas fa-bone"></i> Colágenos</a></li>
+                        <li><a href="#funcionais" data-category="funcionais"><i class="fas fa-heartbeat"></i> Funcionais</a></li>
+                        <li><a href="#alimentos" data-category="alimentos"><i class="fas fa-apple-alt"></i> Alimentos</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="sidebar-banner">
+                    <h3>Ofertas Especiais</h3>
+                    <div class="offer-card">
+                        <img src="img/oferta-especial.jpg" alt="Oferta Especial">
+                        <div class="offer-content">
+                            <h4>Desconto de 20%</h4>
+                            <p>Em todos os produtos da linha Power</p>
+                            <a href="#" class="btn btn-sm">Ver Ofertas</a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Conteúdo Principal -->
+            <div class="content">
+                <!-- Banner Principal -->
+                <section class="main-banner">
+                    <div class="banner-slider">
+                        <div class="slide active">
+                            <img src="img/banner1.jpg" alt="Promoção de Whey Protein">
+                            <div class="slide-content">
+                                <h2>Whey Protein com 30% OFF</h2>
+                                <p>Aproveite nossa promoção especial em todas as marcas de Whey Protein</p>
+                                <a href="#wheys" class="btn btn-primary">Ver Produtos</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="img/banner2.jpg" alt="Lançamento Pré-treino">
+                            <div class="slide-content">
+                                <h2>Novos Pré-treinos</h2>
+                                <p>Conheça nossa nova linha de pré-treinos para maximizar seus resultados</p>
+                                <a href="#pre-treinos" class="btn btn-primary">Ver Produtos</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="img/banner3.jpg" alt="Suplementos Naturais">
+                            <div class="slide-content">
+                                <h2>Suplementos Naturais</h2>
+                                <p>Linha completa de suplementos naturais para sua saúde e bem-estar</p>
+                                <a href="#funcionais" class="btn btn-primary">Ver Produtos</a>
+                            </div>
+                        </div>
+                        <button class="slider-btn prev" aria-label="Slide anterior"><i class="fas fa-chevron-left"></i></button>
+                        <button class="slider-btn next" aria-label="Próximo slide"><i class="fas fa-chevron-right"></i></button>
+                        <div class="slider-dots">
+                            <span class="dot active" data-slide="0"></span>
+                            <span class="dot" data-slide="1"></span>
+                            <span class="dot" data-slide="2"></span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Destaques -->
+                <section class="featured-section">
+                    <h2 class="section-title">Produtos em Destaque</h2>
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <div class="product-badge">Mais Vendido</div>
+                            <div class="product-image">
+                                <img src="img/produto1.jpg" alt="Whey Protein Isolado">
+                            </div>
+                            <div class="product-info">
+                                <h3>Whey Protein Isolado</h3>
+                                <div class="product-category">Wheys</div>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(120)</span>
+                                </div>
+                                <p class="product-description">
+                                    Proteína de alta qualidade para ganho de massa muscular e recuperação pós-treino.
+                                </p>
+                                <div class="product-price">
+                                    <span class="old-price">R$ 189,90</span>
+                                    <span class="current-price">R$ 149,90</span>
+                                </div>
+                                <button class="btn btn-primary btn-block">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card">
+                            <div class="product-badge">Promoção</div>
+                            <div class="product-image">
+                                <img src="img/produto2.jpg" alt="Creatina Monohidratada">
+                            </div>
+                            <div class="product-info">
+                                <h3>Creatina Monohidratada</h3>
+                                <div class="product-category">Funcionais</div>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(98)</span>
+                                </div>
+                                <p class="product-description">
+                                    Aumenta a força, potência muscular e performance durante treinos intensos.
+                                </p>
+                                <div class="product-price">
+                                    <span class="old-price">R$ 99,90</span>
+                                    <span class="current-price">R$ 79,90</span>
+                                </div>
+                                <button class="btn btn-primary btn-block">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card">
+                            <div class="product-badge">Novo</div>
+                            <div class="product-image">
+                                <img src="img/produto3.jpg" alt="Pré-treino Energy">
+                            </div>
+                            <div class="product-info">
+                                <h3>Pré-treino Energy</h3>
+                                <div class="product-category">Pré-treinos</div>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(45)</span>
+                                </div>
+                                <p class="product-description">
+                                    Fornece energia, foco e bomba muscular para treinos mais intensos e produtivos.
+                                </p>
+                                <div class="product-price">
+                                    <span class="current-price">R$ 119,90</span>
+                                </div>
+                                <button class="btn btn-primary btn-block">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="img/produto4.jpg" alt="Multivitamínico Daily">
+                            </div>
+                            <div class="product-info">
+                                <h3>Multivitamínico Daily</h3>
+                                <div class="product-category">Vitaminas</div>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(76)</span>
+                                </div>
+                                <p class="product-description">
+                                    Complexo vitamínico completo para suprir as necessidades diárias do organismo.
+                                </p>
+                                <div class="product-price">
+                                    <span class="old-price">R$ 69,90</span>
+                                    <span class="current-price">R$ 59,90</span>
+                                </div>
+                                <button class="btn btn-primary btn-block">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Categorias de Produtos -->
+                <section id="wheys" class="category-section">
+                    <div class="category-header">
+                        <h2 class="section-title">Wheys</h2>
+                        <a href="#" class="view-all">Ver todos <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="category-description">
+                        <p>Os Whey Proteins são suplementos à base de proteína do soro do leite, ideais para ganho de massa muscular, recuperação pós-treino e manutenção da saúde muscular.</p>
+                    </div>
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="img/whey1.jpg" alt="Whey Protein Concentrado">
+                            </div>
+                            <div class="product-info">
+                                <h3>Whey Protein Concentrado</h3>
+                                <div class="product-category">Wheys</div>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(87)</span>
+                                </div>
+                                <p class="product-description">
+                                    Proteína de qualidade com bom custo-benefício para ganho de massa muscular.
+                                </p>
+                                <div class="product-price">
+                                    <span class="current-price">R$ 129,90</span>
+                                </div>
+                                <button class="btn btn-primary btn-block">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card">
+                            <div class="product-badge">Promoção</div>
+                            <div class="product-image">
+                                <img src="img/whey2.jpg" alt="Whey Protein Isolado Premium">
+                            </div>
+                            <div class="product-info">
+                                <h3>Whey Protein Isolado Premium</h3>
+                                <div class="product-category">Wheys</div>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(132)</span>
+                                </div>
+                                <p class="product-description">
+                                    Proteína de alta pureza, com baixo teor de gordura e carboidratos, ideal para definição muscular.
+                                </p>
+                                <div class="product-price">
+                                    <span class="old-price">R$ 199,90</span>
+                                    <span class="current-price">R$ 169,90</span>
+                                </div>
+                                <button class="btn btn-primary btn-block">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="img/whey3.jpg" alt="Whey Protein Hidrolisado">
+                            </div>
+                            <div class="product-info">
+                                <h3>Whey Protein Hidrolisado</h3>
+                                <div class="product-category">Wheys</div>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(64)</span>
+                                </div>
+                                <p class="product-description">
+                                    Proteína pré-digerida para rápida absorção e recuperação muscular imediata.
+                                </p>
+                                <div class="product-price">
+                                    <span class="current-price">R$ 219,90</span>
+                                </div>
+                                <button class="btn btn-primary btn-block">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card">
+                            <div class="product-badge">Novo</div>
+                            <div class="product-image">
+                                <img src="img/whey4.jpg" alt="Whey Protein 3W">
+                            </div>
+                            <div class="product-info">
+                                <h3>Whey Protein 3W</h3>
+                                <div class="product-category">Wheys</div>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(42)</span>
+                                </div>
+                                <p class="product-description">
+                                    Blend de proteínas com liberação gradual para nutrição muscular prolongada.
+                                </p>
+                                <div class="product-price">
+                                    <span class="current-price">R$ 179,90</span>
+                                </div>
+                                <button class="btn btn-primary btn-block">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="hipercaloricos" class="category-section">
+                    <div class="category-header">
+                        <h2 class="section-title">Hipercalóricos</h2>
+                        <a href="#" class="view-all">Ver todos <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="category-description">
+                        <p>Os Hipercalóricos são suplementos ricos em calorias, proteínas e carboidratos, ideais para quem busca ganho de peso e massa muscular, especialmente para pessoas com metabolismo acelerado.</p>
+                    </div>
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="img/hiper1.jpg" alt="Hipercalórico Mass Gainer">
+                            </div>
+                            <div class="product-info">
+                                <h3>Hipercalórico Mass Gainer</h3>
+                                <div class="product-category">Hipercalóricos</div>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(56)</span>
+                                </div>
+                                <p class="product-description">
+                                    Fórmula com alto teor calórico para ganho de peso e massa muscular rápido.
+                                </p>
+                                <div class="product-price">
+                                    <span class="current-price">R$ 149,90</span>
+                                </div>
+                                <button class="btn btn-primary btn-block">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card">
+                            <div class="product-badge">Promoção</div>
+                            <div class="product-image">
+                                <img src="img/hiper2.jpg" alt="Hipercalórico Premium">
+                            </div>
+                            <div class="product-info">
+                                <h3>Hipercalórico Premium</h3>
+                                <div class="product-category">Hipercalóricos</div>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(38)</span>
+                                </div>
+                                <p class="product-description">
+                                    Blend de carboidratos complexos e proteínas para ganho de massa muscular de qualidade.
+                                </p>
+                                <div class="product-price">
+                                    <span class="old-price">R$ 179,90</span>
+                                    <span class="current-price">R$ 159,90</span>
+                                </div>
+                                <button class="btn btn-primary btn-block">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="pre-treinos" class="category-section">
+                    <div class="category-header">
+                        <h2 class="section-title">Pré-treinos</h2>
+                        <a href="#" class="view-all">Ver todos <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="category-description">
+                        <p>Os Pré-treinos são suplementos formulados para aumentar energia, foco, resistência e bomba muscular durante os exercícios, potencializando seus resultados no treino.</p>
+                    </div>
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <div class="product-badge">Mais Vendido</div>
+                            <div class="product-image">
+                                <img src="img/pre1.jpg" alt="Pré-treino Extreme">
+                            </div>
+                            <div class="product-info">
+                                <h3>Pré-treino Extreme</h3>
+                                <div class="product-category">Pré-treinos</div>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(112)</span>
+                                </div>
+                                <p class="product-description">
+                                    Fórmula potente com cafeína, beta-alanina e citrulina para máxima energia e bomba muscular.
+                                </p>
+                                <div class="product-price">
+                                    <span class="current-price">R$ 129,90</span>
+                                </div>
+                                <button class="btn btn-primary btn-block">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card">
+                            <div class="product-badge">Novo</div>
+                            <div class="product-image">
+                                <img src="img/pre2.jpg" alt="Pré-treino Focus">
+                            </div>
+                            <div class="product-info">
+                                <h3>Pré-treino Focus</h3>
+                                <div class="product-category">Pré-treinos</div>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(47)</span>
+                                </div>
+                                <p class="product-description">
+                                    Fórmula com foco em concentração mental e energia sustentada para treinos longos.
+                                </p>
+                                <div class="product-price">
+                                    <span class="current-price">R$ 109,90</span>
+                                </div>
+                                <button class="btn btn-primary btn-block">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Benefícios -->
+                <section class="benefits-section">
+                    <h2 class="section-title">Por que escolher a PowerSuplementos?</h2>
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <h3>Entrega Rápida</h3>
+                            <p>Entregamos em todo o Brasil com rapidez e segurança.</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Produtos Originais</h3>
+                            <p>Garantia de produtos 100% originais e de qualidade.</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-credit-card"></i>
+                            </div>
+                            <h3>Pagamento Seguro</h3>
+                            <p>Diversas formas de pagamento com total segurança.</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <h3>Suporte Especializado</h3>
+                            <p>Equipe de especialistas para tirar suas dúvidas.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Newsletter -->
+                <section class="newsletter-section">
+                    <div class="newsletter-content">
+                        <h2>Receba Novidades e Promoções</h2>
+                        <p>Cadastre-se para receber ofertas exclusivas e dicas de suplementação.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Seu melhor e-mail" required>
+                            <button type="submit" class="btn btn-primary">Cadastrar</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/logo.png" alt="PowerSuplementos Logo">
+                    <h2>Power<span>Suplementos</span></h2>
+                    <p>Sua loja de suplementos alimentares para uma vida mais saudável.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="quem-somos.html">Quem Somos</a></li>
+                        <li><a href="fale-conosco.html">Fale Conosco</a></li>
+                        <li><a href="endereco.html">Endereço</a></li>
+                        <li><a href="politica-privacidade.html">Política de Privacidade</a></li>
+                        <li><a href="termos-uso.html">Termos de Uso</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-categories">
+                    <h3>Categorias</h3>
+                    <ul>
+                        <li><a href="#wheys">Wheys</a></li>
+                        <li><a href="#hipercaloricos">Hipercalóricos</a></li>
+                        <li><a href="#pre-treinos">Pré-treinos</a></li>
+                        <li><a href="#vitaminas">Vitaminas</a></li>
+                        <li><a href="#minerais">Minerais</a></li>
+                        <li><a href="#colagenos">Colágenos</a></li>
+                        <li><a href="#funcionais">Funcionais</a></li>
+                        <li><a href="#alimentos">Alimentos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Paulista, 1000 - São Paulo/SP</p>
+                    <p><i class="fas fa-phone"></i> (11) 5555-5555</p>
+                    <p><i class="fas fa-envelope"></i> contato@powersuplementos.com.br</p>
+                    <p><i class="fab fa-whatsapp"></i> (11) 99999-9999</p>
+                    
+                    <div class="social-media">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 PowerSuplementos - Todos os direitos reservados.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-pix"></i>
+                    <i class="fas fa-barcode"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <button id="btn-topo" aria-label="Voltar ao topo">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- WhatsApp Flutuante -->
+    <a href="https://wa.me/5511999999999" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+
